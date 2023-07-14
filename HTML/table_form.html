@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Table using form</title>
+</head>
+<body align="center" bgcolor="greenyellow">
+    <form>
+        <table align="center">
+            <tbody>
+                <h3><font color="red" align="center"><u>Personal Details</u></font></h3>
+                <tr>
+                    <td>
+                        <label>Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="enter your name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password :</label>
+                    </td>
+                    <td>
+                        <input type="Password"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email ID :</label></td>
+                    <td><input type="email" placeholder="abc123@gmail.com" name="mailid"/></td>
+                </tr>
+                <tr>
+                    <td> <label for="gender">Gender:</label> </td>
+                        <td><input type="radio" name="gender">Male</td>
+                        <td><input type="radio" name="gender" >Female</td>
+                        
+                </tr>
+                <tr>
+                    <td> <label>Contact :</label></td>
+                    <td> <input type="tel" placeholder="+91 9500980909"/></td>
+                </tr>
+                <tr>
+                    <td ><h3><font color="red" align="center"> <u>PEducational Qualification Details</u></font></h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Degree : </label>
+                    </td>
+                    <td>
+                     <select>
+                       <option selected hidden>----Select Group-----</option>
+                       <option>BCA</option>
+                       <option>BSC</option>
+                        <option>BBA</option>
+                        <option>BCOM</option>
+                    </select></td>
+
+                </tr>
+                <tr>
+                    <td>  <label>Engineering : </label></td>
+                    <td> <select>
+                        <option selected hidden>----Select Group-----</option>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>FOOD E</option>
+                        <option>EEE</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td> <label>Hobbies:</label></td>
+                    <td> <input type="checkbox" />Reading Books</td>
+                    <td> <input type="checkbox" />Playing Games </td>
+                    <td> <input type="checkbox" />Trading</td>
+                    <td> <input type="checkbox" />Cooking</td>
+                </tr>
+
+                <tr align="center">
+                    <td align="center"><h3><font color="red" align="center"><u>ADDRESS</u></font></h3></td> </tr>
+                    <tr><td>  <textarea ></textarea></td>
+                </tr>
+                <tr>
+                    <td> <label>Attach Resume</label></td>
+                    <td> <input type="file"  /></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td><button type="submit">
+                        Submit
+                    </button></td>
+                    <td><button type="reset">
+                        Cancel
+                    </button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
