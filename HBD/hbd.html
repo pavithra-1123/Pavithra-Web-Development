@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        #img1
+        {
+            background-image: url("../images/v4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #bu
+        {
+            text-align: center;
+        }
+    </style>
+    <script>
+        let Perform=()=>
+        {
+        document.getElementById("menu").innerHTML="<table align='center' border='2px' cellpadding='8px' cellspacing='5px' class='text-light mt-5'><thead><tr><th>Menu</th></tr></thead><tbody><div class='col'><tr><td></td></tr></div></tbody></table>"
+        }
+    </script>
+</head>
+<body>
+    <div class="row justify-content-center mt-2">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <div id="img1">
+            <marquee behavior="alternate" direction="right" class="text-light"><h1>HAPPY BIRTHDAY MUIN</h1> &VerticalTilde;</marquee>
+            <br><br><br>
+            <h1 class="text-center text-light"><i class="bi bi-balloon-heart " style="font-size: 200px"></i><br><br> &hearts; Muin Please click this button &hearts;</h1>
+            <br><br><br>
+            <button class="btn btn-outline-primary col-3 ms-5" style="text-align: center;" ondblclick="Perform()">click</button>
+            <button class="btn btn-outline-primary col-3 ms-5" style="text-align: center;" >click</button>
+            <button class="btn btn-outline-primary col-3 ms-5" style="text-align: center;" >click</button>
+            <br><br><br><br><br><br><br><br>  
+            <audio controls autoplay loop><source src="../images/kathaipoma.mpeg"> </audio>  
+        </div>
+        </div>
+    </div>
+</body>
+</html>
