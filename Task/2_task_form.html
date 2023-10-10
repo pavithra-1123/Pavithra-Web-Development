@@ -6,62 +6,86 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="2_task_form_validation.js"></script>
+   <style>
+    span
+    {
+        color :brown;
+    }
+   </style>
 </head>
-<body class="bg-dark">
-    <form>
+<body >
+    <form name="myform" class="bg-secondary fw-bold" onsubmit="return formvalidation()" >
         <table align="center" >
-            <tbody>
-                <h3 align="center"><font color=" blue"><u>Student Registration Form</u></font></h3>
-                <tr class="bg-warning">
-                    <td> <label>First Name  </label></td>
-                    <td><input type="text" placeholder="Naruto"/>  </td>
+            <tbody class="bg-secondary">
+                <h3 align="center" class="bg-info">Student Registration Form</h3>
+                <tr >
+                    <td> 
+                        <label>First Name  </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Naruto" name="fname"/> 
+                        <span id="fname1"></span>
+                    </td>
                 </tr>
                 
-                <tr class="bg-success">
-                    <td> <label>Last Name  </label></td>
-                    <td><input type="text" placeholder="Uzumaki"/> </td>
+                <tr >
+                    <td> 
+                        <label>Last Name  </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Uzumaki" name="lname"/>
+                        <span id="lname1"></span> 
+                    </td>
                 </tr>
                 
-                <tr class="bg-info">
+                <tr >
                     <td><label>Email ID  </label></td>
-                    <td><input type="email" placeholder="narutou@gmail.com" name="mailid"/></td>
+                    <td><input type="email" placeholder="narutou@gmail.com" name="mailid" />
+                    <span id="mailid1"></span></td>
                 </tr>
 
-                <tr class="bg-warning">
+                <tr >
                     <td><label>Mobile Number  </label></td>
-                    <td><input type="tel" placeholder="4032XXXXXX" /> </td>
+                    <td><input type="tel" placeholder="9032XXXXXX" name="mob" />
+                    <span id="mob1"></span> </td>
                 </tr>
-                <tr class="bg-primary">
+                <tr >
                     <td><label>Gender</label></td>
                     <td><input type="radio" name="gender" /> Male
                     <input type="radio" name="gender" /> Female
                 </td>
                 </tr>
-                <tr class="bg-secondary">
+                <tr >
                     <td><label>Date of Birth(DOB)</label></td>
                     <td><input type="date" placeholder="Day"/></td>
                 </tr>
-                <tr class="bg-success">
+                <tr >
                     <td> <label>Address</label></td>
-                    <td><textarea></textarea></td>
+                    <td><input type="text" name="add" />
+                    <span id="add1"></span></td>
                 </tr>
-                <tr class="bg-warning">
+                <tr >
                     <td><label>City</label></td>
-                    <td><input type="text" placeholder="salem"/> </td>
+                    <td><input type="text" placeholder="salem" name="city"/> 
+                    <span id="city1"></span></td></td>
                 </tr>
-                <tr class="bg-primary">
+                <tr >
                     <td><label>Pin Code</label></td>
-                    <td><input type="tel" placeholder="636001"/></td>
+                    <td><input type="tel" placeholder="636001" name="pin"/>
+                    <span id="pin1"></span></td></td>
                 </tr>
-                <tr class="bg-info">
+                <tr >
                     <td><label>State</label></td>
-                    <td><input type="text" placeholder="Tamilnadu"/></td>
+                    <td><input type="text" placeholder="Tamilnadu" name="state"/>
+                        <span id="state1"></span></td></td>
                 </tr>
-                <tr class="bg-warning">
+                <tr>
                     <td><label>Country</label></td>
-                    <td><input type="text" placeholder="India"/></td>
+                    <td><input type="text" placeholder="India" name="cou"/>
+                        <span id="cou1"></span></td>
                 </tr>
-                <tr class="bg-success">
+                <tr >
                     <td>Hobbies <br /><br /><br /></td>
                     <td>
                     <input type="checkbox" /> Drawing
@@ -75,7 +99,7 @@
                     (Max 50 Characters Allowed)
                     </td>
                     </tr>
-                <tr class="bg-primary">
+                <tr >
                     <td>Qualification <br /><br /><br /></td>
                     <td>
                     <br/>
@@ -86,7 +110,7 @@
                     <input type="checkbox" >Phd
                     </td>
                     </tr>
-                    <tr class="bg-info">
+                    <tr >
                         <td>Courses<br />Applied For</td>
                         <td>
                         <input type="radio" > BCA(Bachelor of Computer Applications)<br>
@@ -99,10 +123,10 @@
                         <input type="radio" > MA(Master of Arts)<br>
                         </td>
                         </tr>
-                <div>
-                    <tr align="center" class="bg-light">
-                    <td><button col-4 ms-4 me-4 btn btn-outline-primary type="submit">Submit</button></td>
-                    <td><button col-4 ms-3 me-3 btn btn-warning type="reset">Reset</button></td>
+                <div class="mt-4">
+                    <tr align="center" class="fw-bold mt-3">
+                    <td><button col-4 ms-4 me-4 mt-3 btn btn-outline-primary type="submit">Submit</button></td>
+                    <td><button col-4 ms-3 me-3 mt-3 btn btn-warning type="reset">Reset</button></td>
                 </tr>
                 </div>
             
